@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/StockSnap_CSUSTA3SM3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.main {
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  background-color: rgba(219, 233, 255, 0.591);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 10px 10px rgba(130, 126, 126, 0.4);
+}
+div.main h1 {
+  color: gold;
+}
+
+/*# sourceMappingURL=style.css.map */
