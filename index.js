@@ -7,25 +7,6 @@ $(document).ready(function() {
 
 
 
-    if (('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch))) {
-        console.log('touched')
-        $(".touch")
-            .bind("touchstart", function() {
-                $(this)
-                    .addClass("active")
-                    .bind("touchend", function() {
-                        $(this).removeClass("active");
-                    });
-            })
-            .bind("touchenter", function() {
-                $(this)
-                    .addClass("hover")
-                    .bind("touchleave", function() {
-                        $(this).removeClass("hover active");
-                    });
-            });
-    }
-
 
 
     // Get the modal
@@ -35,6 +16,7 @@ $(document).ready(function() {
     var cableImg = document.getElementById("cableCard");
     var ezraImg1 = document.getElementById("ezraImg");
     var ezraImg2 = document.getElementById("ezraImg2");
+    var specImg = document.getElementById("specImg");
 
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -50,6 +32,11 @@ $(document).ready(function() {
         captionText.innerHTML = this.alt;
     }
     ezraImg2.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    specImg.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
@@ -84,7 +71,7 @@ $(document).ready(function() {
     }, 5000);
 
 
-    insideImages = ["/assets/winnie.png", "/assets/stitch.png"];
+    insideImages = ["/assets/winnie.png", "/assets/stitch.png", "/assets/bnb_transparent.png"];
     var centerImage = $('#centerImg');
     var j = 0
     setInterval(function(){  
