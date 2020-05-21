@@ -21,8 +21,9 @@ div.panning {
     margin: 0;
     padding: 0;
     z-index: 2;
-    background: #d54d56;
-    // background: #c0d6df;
+    // background: #d54d56;
+    background: #c0d6df;
+    // background: rgb(255, 215, 56);
     // text-align: center;
     // display: flex;
     // flex-direction: column;
@@ -956,5 +957,15 @@ $size: 0.4;
     
     .modal-content {
       width: 100%;
+    }
+
+    .card {
+      width: 90%;
+      height: 250px;
+    }
+
+    .card p {
+      font-size: 0.3em;
+      line-height: 1;
     }
 }
