@@ -7,6 +7,27 @@ $(document).ready(function() {
 
 
 
+    if (('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch))) {
+        console.log('touched')
+        $(".touch")
+            .bind("touchstart", function() {
+                $(this)
+                    .addClass("active")
+                    .bind("touchend", function() {
+                        $(this).removeClass("active");
+                    });
+            })
+            .bind("touchenter", function() {
+                $(this)
+                    .addClass("hover")
+                    .bind("touchleave", function() {
+                        $(this).removeClass("hover active");
+                    });
+            });
+    }
+
+
+
     // Get the modal
     var modal = document.getElementById("myModal");
 
