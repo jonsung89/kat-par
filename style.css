@@ -22,7 +22,7 @@ div.panning {
   margin: 0;
   padding: 0;
   z-index: 2;
-  background: #d54d56;
+  background: #c0d6df;
 }
 
 div.main {
@@ -836,6 +836,16 @@ html, body {
 
   .modal-content {
     width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    height: 250px;
+  }
+
+  .card p {
+    font-size: 0.3em;
+    line-height: 1;
   }
 }
 
